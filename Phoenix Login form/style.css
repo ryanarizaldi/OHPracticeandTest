@@ -1,0 +1,77 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d35400;
+    margin: 0;
+    padding: 0;
+}
+
+
+.login {
+    max-width: 400px;
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.login .logo {
+    /* margin: auto; */
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-content: center;
+    top: 100;
+}
+
+.login .logo img {
+    width: 417px;
+    height: 417px;
+}
+
+.login .input-text {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-items: left;
+}
+
+.login .input-text label {
+    font-weight: bold;
+    color: #7f8c8d;
+}
+
+.login .input-text input {
+    border: 2px solid #7f8c8d;
+    border-radius: 5px;
+    height: 30px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.login .input-checkbox {
+    /* color: #7f8c8d; */
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.login .submit-btn {
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-content: center;
+}
+
+.login .submit-btn button {
+    border: 0 solid #7f8c8d;
+    border-radius: 5px;
+    background: #d35400;
+    padding: 1em 5em;
+    margin: auto;
+}

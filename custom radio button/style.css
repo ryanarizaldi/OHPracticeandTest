@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-content: center;
+    margin: 50px 100px;
+    background: white;
+}
+
+.card p {
+    font-weight: bold;
+}
+
+.card form {
+    border: 1px solid #E1E1E1;
+    margin-top: 8px;
+    border-radius: 5px;
+    max-width: 500px;
+    padding: 15px;
+}
+
+.card form .role {
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 10px;
+    display: flex;
+    flex-flow: row;
+}
+
+
+/* .card form .role label i {
+     position: absolute; 
+     left: 5; 
+    display: flex;
+    flex-flow: row;
+} */
+
+.card form .role label {
+    font-weight: bold;
+    display: flex;
+    flex-flow: column;
+    margin-left: 15px;
+}
+
+.card form .role label span {
+    font-weight: normal;
+}
+
+input[type=radio] {
+    display: none;
+    margin: 10px;
+}
+
+input[type=radio]:checked+.role:active {
+    background-color: #342104;
+    color: white;
+}
