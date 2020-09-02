@@ -37,6 +37,15 @@ body {
     padding: 10px;
     display: flex;
     flex-flow: row;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.selected,
+.card form .role:hover {
+    background: #342104;
+    color: white;
+    padding: 15px;
 }
 
 
@@ -52,18 +61,22 @@ body {
     display: flex;
     flex-flow: column;
     margin-left: 15px;
+    cursor: pointer;
+
 }
 
 .card form .role label span {
     font-weight: normal;
+    cursor: pointer;
+
 }
 
 input[type=radio] {
-    display: none;
+    /* display: none; */
     margin: 10px;
 }
 
-input[type=radio]:checked+.role:active {
+/* .role+input[type=radio]:checked {
     background-color: #342104;
     color: white;
-}
+} */
