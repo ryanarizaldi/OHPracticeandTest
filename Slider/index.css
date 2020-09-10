@@ -1,0 +1,71 @@
+body {
+    background: #eee;
+    font-family: 'Nunito';
+}
+
+.container {
+    margin: 20px auto;
+    height: 500px;
+}
+
+.carousel {
+    border: 2px solid #416be4;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    background: #E5E5E5;
+    padding: 50px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    display: flex;
+    height: 100%;
+    border: 1px solid black;
+    background: white;
+    /* width: 400%; */
+}
+
+.slider .slide {
+    /* flex-basis: 100%; */
+    /* justify-content: center;
+    align-items: left;
+    display: flex; */
+    font-size: 20px;
+    margin: 76px 69px 148px 61px;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.left,
+.right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+.left {
+    left: 60px;
+}
+
+.right {
+    right: 60px;
+}
+
+.control span {
+    border: 1px solid black;
+    border-radius: 50px;
+    background: white;
+}
+
+.btn-hide {
+    display: none;
+}
+
+/* CSS mantap */

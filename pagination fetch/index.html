@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <!-- <link href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" /> -->
+</head>
+
+<body>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Website</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="row">
+                <!-- <td id="name"></td>
+                <td id="email"></td>
+                <td id="hp"></td>
+                <td id="web"></td>
+                <td id="addre"></td> -->
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        <button id="prev">Left</button>
+        <button id="next">Right</button>
+    </div>
+    <!-- <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Website</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>Leanne Graham</td>
+            <td>Sincere@april.biz</td>
+            <td>1-770-736-8031 x56442</td>
+            <td>hildegard.org</td>
+            <td>Kulas Light Apt. 556 Gwenborough 92998-3874</td>
+        </tr>
+        <tr id="data">
+
+        </tr>
+    </table>
+    <div class="pagination">
+        <button>Prev</button>
+        <p>page of</p>
+        <button class="rigth">Next</button>
+
+    </div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js">
+    </script>
+    <!-- <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script> -->
+    <!-- <script src="index.js"></script> -->
+    <script>
+        $(document).ready(function () {
+            $('#table').DataTable();
+        });
+    </script>
+</body>
+
+</html>

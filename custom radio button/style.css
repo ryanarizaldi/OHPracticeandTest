@@ -1,53 +1,51 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .card {
-    display: flex;
-    flex-flow: column;
-    justify-items: center;
-    align-content: center;
-    margin: 50px 100px;
-    background: white;
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
+  align-content: center;
+  margin: 50px 100px;
+  background: white;
 }
 
 .card p {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .card form {
-    border: 1px solid #E1E1E1;
-    margin-top: 8px;
-    border-radius: 5px;
-    max-width: 500px;
-    padding: 15px;
+  border: 1px solid #e1e1e1;
+  margin-top: 8px;
+  border-radius: 5px;
+  max-width: 500px;
+  padding: 15px;
 }
 
 .card form .role {
-    border: 1px solid #E1E1E1;
-    border-radius: 5px;
-    margin: 20px 0;
-    padding: 10px;
-    display: flex;
-    flex-flow: row;
-    cursor: pointer;
-    transition: 0.2s;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 10px;
+  display: flex;
+  flex-flow: row;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .selected,
 .card form .role:hover {
-    background: #342104;
-    color: white;
-    padding: 15px;
+  background: #342104;
+  color: white;
+  padding: 15px;
 }
-
 
 /* .card form .role label i {
      position: absolute; 
@@ -56,27 +54,25 @@ body {
     flex-flow: row;
 } */
 
-.card form .role label {
-    font-weight: bold;
-    display: flex;
-    flex-flow: column;
-    margin-left: 15px;
-    cursor: pointer;
-
+.card form label {
+  font-weight: bold;
+  display: flex;
+  flex-flow: column;
+  margin-left: 15px;
+  cursor: pointer;
 }
 
-.card form .role label span {
-    font-weight: normal;
-    cursor: pointer;
-
+.card form label span {
+  font-weight: normal;
+  cursor: pointer;
 }
 
-input[type=radio] {
-    /* display: none; */
-    margin: 10px;
+input[type="radio"] {
+  display: none;
+  margin: 10px;
 }
 
-/* .role+input[type=radio]:checked {
-    background-color: #342104;
-    color: white;
-} */
+.role:has(input[type="radio"]:checked) {
+  background-color: #342104;
+  color: white;
+}

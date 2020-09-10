@@ -1,49 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Custom Radio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="card">
-        <p>User Role</p>
-        <form action="">
-            <div class="role">
-                <input type="radio" id="pa" value="pa" name="userRole">
-                <i class="material-icons">person</i>
-                <label for="pa">
-                    Personal Account
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                </label>
-            </div>
-            <div class="role">
-                <input type="radio" id="ca" value="ca" name="userRole">
-                <i class="material-icons">people</i>
-                <label for="ca">
-                    Company Account
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                </label>
-            </div>
-            <div class="role">
-                <input type="radio" id="g" value="g" name="userRole">
-                <i class="material-icons">account_circle</i>
-                <label for="g">
-                    Guest
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                </label>
-            </div>
-        </form>
+      <p>User Role</p>
+      <form action="">
+        <div class="role">
+          <input
+            type="radio"
+            id="pa"
+            value="pa"
+            name="userRole"
+            checked="checked"
+          />
+          <i class="material-icons">person</i>
+          <label for="pa">
+            Personal Account
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+            >
+          </label>
+        </div>
+        <div class="role">
+          <input
+            type="radio"
+            id="ca"
+            value="ca"
+            name="userRole"
+            checked="checked"
+          />
+          <i class="material-icons">people</i>
+          <label for="ca">
+            Company Account
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+            >
+          </label>
+        </div>
+        <div class="role">
+          <input
+            type="radio"
+            id="g"
+            value="g"
+            name="userRole"
+            checked="checked"
+          />
+          <i class="material-icons">account_circle</i>
+          <label for="g">
+            Guest
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+            >
+          </label>
+        </div>
+      </form>
     </div>
-    <script>
-        $("div:has(input[type=radio].checked)").addClass("selected");
-    </script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
